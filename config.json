@@ -1,5 +1,7 @@
 {
   "neemtClientenAan": true,
   "tekstBeschikbaar": "Er is op dit moment plek voor nieuwe cliënten.",
-  "tekstVol": "Op dit moment zijn alle plekken bezet. Neem gerust contact op, dan kijken we samen naar de mogelijkheden."
+  "tekstVol": "Op dit moment zijn alle plekken bezet. Neem gerust contact op, dan kijken we samen naar de mogelijkheden.",
+  "tekstBeschikbaarEN": "We currently have availability for new clients.",
+  "tekstVolEN": "We are currently fully booked. Feel free to get in touch so we can look at the options together."
 }

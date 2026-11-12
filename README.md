@@ -12,6 +12,7 @@ Statische website voor Beau Victoire Thuiszorg. Gewone HTML/CSS/JS zonder build-
 | `/over/` | Biografie, geloof, registraties, media |
 | `/contact/` | Contactgegevens en formulier |
 | `/bedankt/` | Pagina na het versturen van het formulier |
+| `/en/…` | Engelse versie: `/en/`, `/en/care/`, `/en/training/`, `/en/about/`, `/en/contact/`, `/en/thank-you/` |
 | `/documenten/` | Privacyverklaring, algemene voorwaarden, klachtenregeling (PDF) |
 | `/biografie/`, `/zzp/`, … | Doorverwijzingen vanaf de oude WordPress-adressen |
 
@@ -23,12 +24,12 @@ Pas `config.json` aan en commit:
 { "neemtClientenAan": false }
 ```
 
-`true` toont een groene balk "Er is plek", `false` een oranje balk "Alle plekken bezet". De teksten staan ook in `config.json`.
+`true` toont een groene balk "Er is plek", `false` een oranje balk "Alle plekken bezet". De Nederlandse en Engelse teksten staan ook in `config.json`.
 
 ## Contactformulier (Web3Forms)
 
 1. Maak op https://web3forms.com een gratis access key aan met beauvictoirethuiszorg@gmail.com.
-2. Vervang `WEB3FORMS_ACCESS_KEY` in `contact/index.html` door die key.
+2. Vervang `WEB3FORMS_ACCESS_KEY` in `contact/index.html` en `en/contact/index.html` door die key.
 
 ## Live zetten
 
@@ -40,6 +41,10 @@ Pas `config.json` aan en commit:
 4. Zet in GitHub Pages "Enforce HTTPS" aan zodra het certificaat klaar is.
 5. Laat de MX-records (e-mail) ongemoeid.
 6. Pas daarna de WordPress-hosting opzeggen.
+
+## Tweetalig
+
+Elke Nederlandse pagina heeft een Engelse tegenhanger. Pas een tekst altijd in beide versies aan. De taalwissel (NL/EN) staat in het menu, en `hreflang`-tags vertellen Google welke versie bij welke taal hoort.
 
 ## Lokaal bekijken
 
