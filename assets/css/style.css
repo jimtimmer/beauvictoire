@@ -77,7 +77,8 @@ li{margin-bottom:.35em}
 .hero{padding:64px 0 72px}
 .hero .container{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
 .hero p.intro{margin-bottom:0}
-.hero-foto img{border-radius:var(--blad);width:100%;aspect-ratio:1/1;object-fit:cover}
+.hero-foto{width:100%;max-width:420px;justify-self:end}
+.hero-foto img{border-radius:var(--blad);width:100%;aspect-ratio:3/4;object-fit:cover}
 .talen{margin-top:1.4em;font-size:1rem;color:var(--tekst-zacht)}
 .talen strong{color:var(--tekst)}
 
@@ -133,11 +134,27 @@ li{margin-bottom:.35em}
 .review-blok{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;background:var(--wit);border-radius:var(--radius);padding:32px;border:1px solid var(--lijn)}
 .review-blok img{width:180px}
 .review-blok p{margin:0;max-width:560px}
+.reviews{display:grid;grid-template-columns:minmax(260px,1fr) 2fr;gap:24px;margin-top:16px;align-items:stretch}
+.review-score,.review{background:var(--wit);border:1px solid var(--lijn);border-radius:var(--radius);padding:28px;margin:0}
+.review-score{display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+.review-score img{width:170px;height:auto}
+.score-rij{display:flex;align-items:center;gap:16px}
+.score-rij p{margin:0;font-size:1rem;color:var(--tekst-zacht);line-height:1.4}
+.score-rij strong{color:var(--tekst)}
+.score-cirkel{flex:none;width:76px;height:76px;border-radius:50%;background:#2d2a6e;color:#fff;display:grid;place-items:center;font-family:"Poppins",sans-serif;font-weight:600;font-size:1.5rem}
+.review-link{font-size:1rem;color:var(--petrol)}
+.review-lijst{display:flex;flex-direction:column;gap:24px}
+.review{display:flex;flex-direction:column;justify-content:space-between;gap:20px;background:var(--mint);border-color:var(--mint-rand)}
+.review p{margin:0;font-size:1.125rem;font-style:italic}
+.review footer{font-size:.95rem;color:var(--tekst-zacht);display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.review footer a{color:var(--petrol)}
+.review-cijfer{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#2d2a6e;color:#fff;font-weight:600;font-size:.85rem;margin-right:4px}
+@media (max-width:900px){.reviews{grid-template-columns:1fr}}
 
 /* Keurmerken */
-.keurmerken{display:flex;flex-wrap:wrap;gap:36px 48px;align-items:center;justify-content:center;margin-top:24px}
-.keurmerken img{height:48px;width:auto;filter:grayscale(1);opacity:.75;transition:filter .2s,opacity .2s}
-.keurmerken img:hover{filter:none;opacity:1}
+.keurmerken{display:flex;flex-wrap:wrap;gap:24px 20px;align-items:center;justify-content:center;margin-top:24px}
+.keurmerken img{height:64px;width:auto;max-width:150px;object-fit:contain}
+@media (max-width:600px){.keurmerken img{height:52px;max-width:130px}}
 
 /* Lijst kwalificaties */
 .kwalificaties{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 32px}
@@ -148,6 +165,11 @@ li{margin-bottom:.35em}
 .contact-item .label{display:block;font-size:.95rem;color:var(--tekst-zacht)}
 .contact-item .waarde{font-family:"Poppins",sans-serif;font-weight:600;font-size:1.5rem;color:var(--petrol);text-decoration:none}
 .formulier{background:var(--wit);border:1px solid var(--lijn);border-radius:var(--radius);padding:32px}
+.formulier-melding{background:#fff4e5;border:1px solid #f0c98a;color:#5c3d00;border-radius:8px;padding:12px 16px;margin:0 0 20px}
+.formulier-melding a{color:inherit;font-weight:600}
+.formulier-velden{border:0;margin:0;padding:0;min-width:0}
+.formulier-velden[disabled]{opacity:.5;cursor:not-allowed}
+.formulier-velden[disabled] *{cursor:not-allowed}
 .veld{margin-bottom:18px}
 .veld label{display:block;font-weight:600;margin-bottom:6px;font-size:1rem}
 .veld input,.veld select,.veld textarea{width:100%;font:inherit;font-size:1.05rem;padding:12px 14px;border:1px solid #cfc8bf;border-radius:12px;background:#fff;color:var(--tekst)}
@@ -177,7 +199,7 @@ li{margin-bottom:.35em}
 
 @media (max-width:960px){
   .hero .container,.duo,.contact-raster{grid-template-columns:1fr;gap:36px}
-  .hero-foto{max-width:460px}
+  .hero-foto{max-width:380px;justify-self:start}
   .raster--3{grid-template-columns:1fr}
   .stappen{grid-template-columns:1fr 1fr}
   .footer-raster{grid-template-columns:1fr 1fr}

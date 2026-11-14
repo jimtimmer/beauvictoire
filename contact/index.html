@@ -15,7 +15,7 @@
 <meta property="og:locale" content="nl_NL">
 <link rel="icon" href="/assets/img/favicon.png">
 <link rel="preload" href="/assets/fonts/poppins-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css?v=4">
 </head>
 <body>
 <a class="skip" href="#inhoud">Naar de inhoud</a>
@@ -49,11 +49,13 @@
 
     <form class="formulier" action="https://api.web3forms.com/submit" method="POST">
       <h2 style="font-size:1.4rem">Stuur een bericht</h2>
-      <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
+      <p class="formulier-melding" role="status">Binnenkort kunt u hier een bericht sturen. Tot die tijd kunt u bellen naar <a href="tel:+31626486913">06 26 48 69 13</a>. Krijgt u de voicemail? Spreek uw naam en nummer in, dan bellen wij u terug.</p>
+      <input type="hidden" name="access_key" value="24627dc1-fca4-4b18-af7c-42af30fec18a">
       <input type="hidden" name="subject" value="Nieuw bericht via beauvictoire-thuiszorg.nl">
       <input type="hidden" name="from_name" value="Website Beau Victoire Thuiszorg">
       <input type="hidden" name="redirect" value="https://www.beauvictoire-thuiszorg.nl/bedankt/">
       <input type="checkbox" name="botcheck" class="verborgen" tabindex="-1" autocomplete="off">
+      <fieldset class="formulier-velden" disabled>
       <div class="veld"><label for="naam">Naam</label><input id="naam" name="naam" required autocomplete="name"></div>
       <div class="veld-rij">
         <div class="veld"><label for="telefoon">Telefoonnummer</label><input id="telefoon" name="telefoon" type="tel" required autocomplete="tel"></div>
@@ -71,6 +73,7 @@
       <div class="veld"><label for="bericht">Uw vraag</label><textarea id="bericht" name="bericht" required placeholder="Bijvoorbeeld: welke zorg, voor wie, vanaf wanneer en in welke plaats."></textarea></div>
       <label class="akkoord"><input type="checkbox" name="akkoord_privacy" value="ja" required><span>Ik ga akkoord met de verwerking van mijn gegevens volgens de <a href="/documenten/privacyverklaring.pdf">privacyverklaring</a>.</span></label>
       <button class="knop" type="submit">Verstuur bericht</button>
+      </fieldset>
     </form>
   </div>
 </section>

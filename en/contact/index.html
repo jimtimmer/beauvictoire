@@ -15,7 +15,7 @@
 <meta property="og:locale" content="en_GB">
 <link rel="icon" href="/assets/img/favicon.png">
 <link rel="preload" href="/assets/fonts/poppins-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css?v=4">
 </head>
 <body>
 <a class="skip" href="#inhoud">Skip to content</a>
@@ -49,11 +49,13 @@
 
     <form class="formulier" action="https://api.web3forms.com/submit" method="POST">
       <h2 style="font-size:1.4rem">Send a message</h2>
-      <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
+      <p class="formulier-melding" role="status">Sending a message through this form will be possible soon. In the meantime, please call <a href="tel:+31626486913">+31 6 26 48 69 13</a>. If you reach the voicemail, leave your name and number and we will call you back.</p>
+      <input type="hidden" name="access_key" value="24627dc1-fca4-4b18-af7c-42af30fec18a">
       <input type="hidden" name="subject" value="New message via beauvictoire-thuiszorg.nl (English)">
       <input type="hidden" name="from_name" value="Website Beau Victoire Thuiszorg">
       <input type="hidden" name="redirect" value="https://www.beauvictoire-thuiszorg.nl/en/thank-you/">
       <input type="checkbox" name="botcheck" class="verborgen" tabindex="-1" autocomplete="off">
+      <fieldset class="formulier-velden" disabled>
       <div class="veld"><label for="naam">Name</label><input id="naam" name="naam" required autocomplete="name"></div>
       <div class="veld-rij">
         <div class="veld"><label for="telefoon">Phone number</label><input id="telefoon" name="telefoon" type="tel" required autocomplete="tel"></div>
@@ -71,6 +73,7 @@
       <div class="veld"><label for="bericht">Your question</label><textarea id="bericht" name="bericht" required placeholder="For example: what kind of care, for whom, from when and where."></textarea></div>
       <label class="akkoord"><input type="checkbox" name="akkoord_privacy" value="yes" required><span>I agree to my data being processed in line with the <a href="/documenten/privacyverklaring.pdf">privacy statement</a> (in Dutch).</span></label>
       <button class="knop" type="submit">Send message</button>
+      </fieldset>
     </form>
   </div>
 </section>
