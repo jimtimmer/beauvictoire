@@ -78,7 +78,7 @@ li{margin-bottom:.35em}
 .hero .container{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
 .hero p.intro{margin-bottom:0}
 .hero-foto{width:100%;max-width:420px;justify-self:end}
-.hero-foto img{border-radius:var(--blad);width:100%;aspect-ratio:3/4;object-fit:cover}
+.hero-foto img{border-radius:var(--blad);width:100%;aspect-ratio:1/1;object-fit:cover}
 .talen{margin-top:1.4em;font-size:1rem;color:var(--tekst-zacht)}
 .talen strong{color:var(--tekst)}
 
